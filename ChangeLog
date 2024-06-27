@@ -1,5 +1,7 @@
 2024-06-26  Ricardo Signes  <cpan@semiotic.systems>
 
+	* lib/Test/Unit.pm: version 0.26
+
 	* lib/Test/Unit/TestCase.pm: the "defined ARRAY" syntax, removed in v5.22.0,
 		has now been removed from this library
 
