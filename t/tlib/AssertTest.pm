@@ -407,10 +407,10 @@ sub test_assert_deep_equals {
     );
 
     my $differ = sub {
-        my ($a, $b) = @_;
+        my ($x, $y) = @_;
         qr/^Structures\ begin\ differing\ at: $ \n
-        \S*\s* \$a .* = .* (?-x:$a)      .* $ \n
-        \S*\s* \$b .* = .* (?-x:$b)/mx;
+        \S*\s* \$a .* = .* (?-x:$x)      .* $ \n
+        \S*\s* \$b .* = .* (?-x:$y)/mx;
     };
 
     my %families; # key=test-purpose, value=assorted circular structures
