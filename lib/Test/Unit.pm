@@ -20,7 +20,7 @@ L<Test::Unit::Tutorial>.
 
 However C<Test::Unit::Procedural> is the procedural style
 interface to a sophisticated unit testing framework for Perl
-that .  Test::Unit is intended to provide a simpler
+that.  Test::Unit is intended to provide a simpler
 interface to the framework that is more suitable for use in a
 scripting style environment.  Therefore, Test::Unit does not
 provide much support for an object-oriented approach to unit
