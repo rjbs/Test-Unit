@@ -99,7 +99,7 @@ use vars qw($VERSION);
 # shell.  "make tardist" should do this automatically.
 
 BEGIN {
-    $VERSION = '0.27';
+    $VERSION = '0.28';
 }
 
 # Constants for notices displayed to the user:
