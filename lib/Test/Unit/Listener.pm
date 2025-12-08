@@ -1,7 +1,9 @@
 package Test::Unit::Listener;
+use strict;
+use warnings;
+
 use Test::Unit::Loader;
 use Carp;
-use strict;
 
 sub new {
     my $class = shift;

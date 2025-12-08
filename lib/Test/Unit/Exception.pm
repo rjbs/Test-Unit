@@ -1,6 +1,7 @@
 package Test::Unit::Exception;
 
 use strict;
+use warnings;
 
 use Carp;
 use Error;

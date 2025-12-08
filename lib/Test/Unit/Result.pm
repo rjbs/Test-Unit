@@ -1,5 +1,6 @@
 package Test::Unit::Result;
 use strict;
+use warnings;
 
 use Test::Unit::Debug qw(debug);
 use Test::Unit::Error;

@@ -2,7 +2,9 @@
 # to be retrofitted as unit tests.
 package Test::Unit::UnitHarness;
 
-BEGIN {require 5.002;}
+use strict;
+use warnings;
+
 use base qw(Test::Unit::Runner Test::Unit::Test Exporter);
 
 use Config;
@@ -14,19 +16,15 @@ use Test::Unit::Debug qw(debug);
 use Test::Unit::TestCase;
 use Test::Unit::Exception;
 
-use strict;
+our $have_devel_corestack = 0;
 
-use vars qw($VERSION $verbose $switches $have_devel_corestack $curtest
-            @EXPORT @EXPORT_OK);
-$have_devel_corestack = 0;
+our $VERSION = "1.1502";
 
-$VERSION = "1.1502";
+our @EXPORT = qw(&runtests);
+our @EXPORT_OK = qw($verbose $switches);
 
-@EXPORT = qw(&runtests);
-@EXPORT_OK = qw($verbose $switches);
-
-$verbose = 0;
-$switches = "-w";
+our $verbose = 0;
+our $switches = "-w";
 
 # class and object methods
 

@@ -1,5 +1,6 @@
 package Test::Unit::Setup;
 use strict;
+use warnings;
 
 use base qw(Test::Unit::Decorator);
 

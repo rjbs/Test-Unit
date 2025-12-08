@@ -1,5 +1,6 @@
 package Test::Unit::TestSuite;
 use strict;
+use warnings;
 
 =head1 NAME
 

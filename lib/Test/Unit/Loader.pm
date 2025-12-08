@@ -1,6 +1,7 @@
 package Test::Unit::Loader;
 
 use strict;
+use warnings;
 
 use FileHandle;
 use Test::Unit::Debug qw(debug);

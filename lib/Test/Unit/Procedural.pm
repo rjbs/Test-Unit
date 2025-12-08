@@ -1,14 +1,14 @@
 package Test::Unit::Procedural;
 
 use strict;
+use warnings;
 
 use Test::Unit::TestSuite;
 use Test::Unit::TestRunner;
 
 use base 'Exporter';
 
-use vars qw(@EXPORT);
-@EXPORT = qw(assert create_suite run_suite add_suite);
+our @EXPORT = qw(assert create_suite run_suite add_suite);
 
 # Helper classes
 use Devel::Symdump;

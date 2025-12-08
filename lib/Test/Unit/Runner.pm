@@ -19,6 +19,7 @@ intended to be used directly.  It provides functionality such as state
 =cut
 
 use strict;
+use warnings;
 
 use Test::Unit::Result;
 

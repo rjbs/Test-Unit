@@ -1,5 +1,7 @@
 package Test::Unit::Error;
 use strict;
+use warnings;
+
 use base qw(Test::Unit::Exception);
 
 # This is a hack to effectively rebless an unknown user exception as a

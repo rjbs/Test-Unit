@@ -1,5 +1,6 @@
 package Test::Unit::TestCase;
 use strict;
+use warnings;
 
 use base qw(Test::Unit::Test);
 

@@ -1,6 +1,8 @@
 package Test::Unit::Assertion::Regexp;
 
 use strict;
+use warnings;
+
 use Test::Unit::Assertion;
 use base qw/Test::Unit::Assertion/;
 

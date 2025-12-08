@@ -1,7 +1,7 @@
 package Test::Unit::Assert;
 
-
 use strict;
+use warnings;
 
 use Test::Unit::Debug qw(debug);
 use Test::Unit::Failure;
@@ -110,7 +110,7 @@ sub multi_assert {
 
 sub is_numeric {
     my $str = shift;
-    local $^W;
+    no warnings 'numeric';
     return defined $str && ! ($str == 0 && $str !~ /^\s*[+-]?0(e0)?\s*$/i);
 }
 
@@ -421,7 +421,7 @@ sub _format_stack {
                   -text => @_ ? join('',@_) : "expected '$num1', got undef"
               );
             # silence `Argument "" isn't numeric in numeric eq (==)' warnings
-            local $^W; 
+            no warnings 'numeric';
             $num1 == $num2 or
               Test::Unit::Failure->throw(
                   -text => @_ ? join('', @_) : "expected $num1, got $num2"
@@ -441,7 +441,7 @@ sub _format_stack {
                     "expected a number != '$num1', got undef"
               );
             # silence `Argument "" isn't numeric in numeric ne (!=)' warnings
-            local $^W; 
+            no warnings 'numeric';
             $num1 != $num2 or
               Test::Unit::Failure->throw(
                   -text => @_ ? join('', @_) : "$num1 and $num2 should differ"

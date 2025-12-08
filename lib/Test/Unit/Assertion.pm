@@ -1,6 +1,7 @@
 package Test::Unit::Assertion;
 
 use strict;
+use warnings;
 
 use Carp;
 use Test::Unit::Failure;

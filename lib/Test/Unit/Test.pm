@@ -1,5 +1,6 @@
 package Test::Unit::Test;
 use strict;
+use warnings;
 
 use Carp;
 
