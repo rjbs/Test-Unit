@@ -8,7 +8,6 @@ use warnings;
 use Test::Unit::Assertion;
 use Test::Unit::Failure;
 
-
 use base 'Test::Unit::Assertion';
 
 use overload 'bool' => sub {$ {$_[0]}};

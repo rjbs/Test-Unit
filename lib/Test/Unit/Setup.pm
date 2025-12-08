@@ -24,7 +24,7 @@ sub set_up {
 
 # Tears down the fixture. Override to tear down the additional
 # fixture state.
- 
+
 sub tear_down {
     print "Suite teardown\n";
 }

@@ -31,7 +31,7 @@ our $switches = "-w";
 sub new {
     my $class = shift;
     my ($name) = @_;
-    
+
     my @_Tests = ();
     my $self = {
         _Tests => \@_Tests,
@@ -40,7 +40,7 @@ sub new {
     };
     bless $self, $class;
     debug(ref($self) . "::new($name) called\n");
-    
+
     return $self;
 }
 
@@ -56,7 +56,7 @@ sub run {
     # pass -I flags to children
     my $old5lib = $ENV{PERL5LIB};
     local($ENV{'PERL5LIB'}) = join($Config{path_sep}, @INC);
-  
+
     if ($^O eq 'VMS') { $switches =~ s/-(\S*[A-Z]\S*)/"-$1"/g }
 
     $fh->open($test) or print "can't open $test. $!\n";
@@ -136,7 +136,7 @@ sub add_test {
 sub add_test_method {
   croak "This suite is not mutable.";
 }
- 
+
 sub count_test_cases {
   return 0;
 }
@@ -174,11 +174,11 @@ sub new {
     my $class = shift;
     my ($message) = @_;
     my $stacktrace = '';
-    
+
     $message = '' unless defined($message);
-    $stacktrace = $class . ": Output from external test\n" 
+    $stacktrace = $class . ": Output from external test\n"
                          . $message . "\n";
-    
+
     bless { stacktrace => $stacktrace }, $class;
 }
 
@@ -197,7 +197,7 @@ Test::Unit::UnitHarness - unit testing framework helper class
 
 =head1 SYNOPSIS
 
-This class is not intended to be used directly 
+This class is not intended to be used directly
 
 =head1 DESCRIPTION
 

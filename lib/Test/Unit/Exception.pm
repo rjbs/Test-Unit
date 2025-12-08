@@ -66,7 +66,7 @@ Test::Unit::Exception - unit testing framework exception class
 
 =head1 SYNOPSIS
 
-This class is not intended to be used directly 
+This class is not intended to be used directly
 
 =head1 DESCRIPTION
 
